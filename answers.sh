@@ -50,3 +50,19 @@ SELECT employees.name FROM employees INNER JOIN companies ON employees.Company=c
 
 SELECT companies.Name FROM companies INNER JOIN employees ON employees.Company=companies.Name WHERE Role="Graphic Designer";
 
+# Count and Filter
+
+# problem 1 
+SELECT * FROM students WHERE Points=(SELECT max(Points) FROM students);
+
+# problem 2 
+SELECT avg(Points) FROM students;
+
+# problem 3 
+SELECT count(ID) FROM students WHERE Points="500";
+
+#  problwm 4 
+SELECT Name FROM students WHERE Name like '%s%';
+
+# problem  5 
+SELECT * FROM students ORDER BY Points DESC
