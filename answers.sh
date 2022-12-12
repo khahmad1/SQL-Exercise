@@ -23,6 +23,7 @@ SET Points = 107
 WHERE Name = "Alex" and Points =200;
 
 #Creating Table
+
     CREATE TABLE  graduates (
     ID INTEGER NOT NULL PRIMARY KEY,
     Name  TEXT NOT NULL UNIQUE,
@@ -30,3 +31,15 @@ WHERE Name = "Alex" and Points =200;
     Gender TEXT,
     Points INTEGER,
 	Graduation TEXT,);
+
+#problem 1
+INSERT INTO Graduates (Name, Age, Gender, Points)
+SELECT Name, Age, Gender, Points FROM students
+WHERE name="Layal"; 
+#problem 2
+UPDATE Graduates SET Graduation = '08/09/2018'
+WHERE name = 'Layal';
+#problem 3
+DELETE FROM students WHERE name="Layal" ;
+
+
