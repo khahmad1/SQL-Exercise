@@ -21,3 +21,12 @@ WHERE Name = "Basma" and Points =300;
 UPDATE students 
 SET Points = 107 
 WHERE Name = "Alex" and Points =200;
+
+#Creating Table
+    CREATE TABLE  graduates (
+    ID INTEGER NOT NULL PRIMARY KEY,
+    Name  TEXT NOT NULL UNIQUE,
+    Age INTEGER,
+    Gender TEXT,
+    Points INTEGER,
+	Graduation TEXT,);
